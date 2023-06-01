@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=9"/>
+    <title>Document</title>
+    <link rel="stylesheet" href="css/reset.css">    
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/xeicon@2.3.3/xeicon.min.css">  
+    <style>
+
+    </style>
+</head>
+<body>
+
+
+    <script type="module">
+        // import make1 from './module/test3.js'
+        import make1, {num,make2,Person,obj,arr} from './module/test3.js'
+        console.log(num)
+        console.log(make1())
+        console.log(make1)
+        console.log(make2(10,20))
+        const man = new Person()
+        man.name = '이도현'
+        console.log(man.name)
+        console.log(obj.name,obj.age,obj['addr'])
+        console.log(arr[2])
+        console.log(arr[0])
+    </script>     
+</body>
+</html>

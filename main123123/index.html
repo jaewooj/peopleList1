@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=9"/>
+    <title>Document</title>
+    <link rel="stylesheet" href="css/reset.css">    
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/xeicon@2.3.3/xeicon.min.css">  
+    <style>
+        #wrap {
+            width: 500px;
+            margin: 80px auto;
+        }
+        #wrap .btn {
+            display: flex;
+            justify-content: space-between;
+            margin-bottom: 20px;
+        }
+        #wrap .btn button {
+            width: 200px;
+            height: 60px;
+            background: #fff;
+            border: 1px solid #000;
+            font-size: 20px;
+            font-weight: 600;
+            cursor: pointer;
+        }
+        #wrap ul {}
+        #wrap ul li {
+            border: 2px solid rgb(226, 226, 226);
+            display: flex;
+            position: relative;
+        }
+        #wrap ul .employee {
+            margin-bottom: 20px;
+        }
+        #wrap .list.on {
+            display: none;
+        }
+        #wrap ul li img {
+            width: 120px;
+            height: 120px;
+            border-radius: 50% 50%;
+            margin: 20px;
+        }
+        #wrap ul li ul {
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+            padding: 25px 0;
+            margin-left: 5px;
+        }
+        #wrap ul li ul li {
+            border: none;
+            font-size: 20px;
+        }
+        #wrap ul li i {
+            font-size: 50px;
+            position: absolute;
+            right: 10%;
+            top: 50%;
+            transform: translateY(-50%);
+            cursor: pointer;
+        }
+    </style>
+</head>
+<body>
+    <div id="wrap">
+        <div class="btn">
+            <button class="delete">명단삭제</button>
+            <button class="view">명단보기</button>
+        </div>
+        <ul class="list">
+            <li class="employee">
+                <img src="images/cat0.jpg" alt="">
+                <ul class="employeeInfo">
+                    <!-- <li>홍길동</li>
+                    <li>웹퍼블리셔</li>
+                    <li>010-0000-1111</li> -->
+                </ul>
+                <i class="xi-heart-o"></i>
+            </li>
+            <li class="employee">
+                <img src="images/cat1.jpg" alt="">
+                <ul class="employeeInfo">
+                    <!-- <li>홍길동</li>
+                    <li>웹퍼블리셔</li>
+                    <li>010-0000-1111</li> -->
+                </ul>
+                <i class="xi-heart-o"></i>
+            </li>
+            <li class="employee">
+                <img src="images/cat2.jpg" alt="">
+                <ul class="employeeInfo">
+                    <!-- <li>홍길동</li>
+                    <li>웹퍼블리셔</li>
+                    <li>010-0000-1111</li> -->
+                </ul>
+                <i class="xi-heart-o"></i>
+            </li>
+            <li class="employee">
+                <img src="images/cat3.jpg" alt="">
+                <ul class="employeeInfo">
+                    <!-- <li>홍길동</li>
+                    <li>웹퍼블리셔</li>
+                    <li>010-0000-1111</li> -->
+                </ul class="employeeInfo">
+                <i class="xi-heart-o"></i>
+            </li>
+            <li class="employee">
+                <img src="images/cat4.jpg" alt="">
+                <ul class="employeeInfo">
+                    <!-- <li>홍길동</li>
+                    <li>웹퍼블리셔</li>
+                    <li>010-0000-1111</li> -->
+                </ul>
+                <i class="xi-heart-o"></i>
+            </li>
+            <li class="employee">
+                <img src="images/cat5.jpg" alt="">
+                <ul class="employeeInfo">
+                    <!-- <li>홍길동</li>
+                    <li>웹퍼블리셔</li>
+                    <li>010-0000-1111</li> -->
+                </ul>
+                <i class="xi-heart-o"></i>
+            </li>            
+        </ul>
+    </div>
+
+    <script type="module"  src="./sample4/sample4.js">
+
+        /* let listDelete=document.querySelector('.delete');
+        let list =document.querySelector('.list')
+        listDelete.addEventListener('click',e=>{
+            list.classList.add('on');
+        })
+        let listView=document.querySelector('.view');
+        listView.addEventListener('click',e=>{
+            list.classList.remove('on');
+            make()
+        })
+        let likeBtn =document.querySelectorAll('#wrap ul li i')
+        likeBtn.forEach((item,idx)=>{
+            item.addEventListener('click',e=>{
+                    if(e.currentTarget.style.color==='red'){
+                        e.currentTarget.classList.replace('xi-heart','xi-heart-o')
+                        e.currentTarget.style.color='black';
+                    } else {
+                        e.currentTarget.classList.replace('xi-heart-o','xi-heart')
+                        e.currentTarget.style.color='red';
+                    }
+            })
+        })
+        function make(){
+            likeBtn.forEach(item=>{
+                item.classList.replace('xi-heart','xi-heart-o')
+                item.style.color='black';
+            })
+        } */
+    </script>     
+</body>
+</html>

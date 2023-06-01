@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=9"/>
+    <title>Document</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/xeicon@2.3.3/xeicon.min.css">  
+    <style>
+        button {
+            width: 150px;
+            height: 40px;
+        }
+        .container {
+            width: 200px;
+            border: 1px solid #000;
+            padding: 15px;
+            margin-top: 40px;
+        }
+        .container p {
+            font-size: 18px;
+            margin-bottom: 10px;
+        }
+        .container p strong {
+            color: tomato;
+            font-weight: bold;
+        }
+    </style>
+</head>
+<body>
+    <button class="btn">출력</button>
+    <div class="container">
+        <!-- <p>이름 : <strong> 홍길동</strong> 직업 : <strong>풀스택</strong></p> -->
+    </div>
+
+    <script type="module">
+        const obj = [
+            {name:'홍길동', job:'웹퍼블리셔'},
+            {name:'이말자', job:'웹디자이너'},
+            {name:'김영호', job:'풀스택개발자'},
+            {name:'김태리', job:'프론트엔드개발자'},
+            {name:'임지연', job:'데이터베이스개발자'},
+            {name:'이승기', job:'서버개발자'}
+        ]
+        const btn = document.querySelector('.btn')
+        const container = document.querySelector('.container')
+        const showList = () => {
+            const newObj = obj.map(item=>{
+                console.log(item)
+                // 구조분해, 비구조할당
+                const {name,job} = item
+                return `<p>이름 : <strong> ${name}</strong>, 직업 : <strong>${job}</strong></p>`
+            }).join('')
+            container.innerHTML = newObj
+        }
+        btn.addEventListener('click',e=>{
+            showList()
+        })
+    </script>     
+</body>
+</html>
